@@ -47,7 +47,7 @@ Your data is NEVER:
 
 All files stored in Safeplace are encrypted using:
 - **AES-256-CBC** encryption with PKCS#7 padding
-- **PBKDF2-HMAC-SHA256** key derivation (10,000 iterations) for password-protected folders
+- **PBKDF2-HMAC-SHA256** key derivation (100,000 iterations) for password-protected folders
 - **iOS Keychain** storage with `kSecAttrAccessibleWhenUnlockedThisDeviceOnly` for device-protected folders
 - Unique random initialization vectors (IV) and salts for each encryption operation
 
