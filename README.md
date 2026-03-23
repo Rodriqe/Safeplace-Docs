@@ -4,7 +4,7 @@ Public documentation for Safeplace - Secure encrypted file storage for iOS.
 
 ## 🌐 Live Site
 
-**Privacy Policy**: https://rodriqe.github.io/Safeplace-Docs/docs/privacy.html
+**Privacy Policy**: https://rodriqe.github.io/Safeplace-Docs/privacy.html
 
 ## 📄 Contents
 
