@@ -3,21 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safeplace - Secure File Storage</title>
+    <meta name="description" content="Safeplace - Secure encrypted file storage for iOS. AES-256 encryption, password-protected folders, no cloud.">
+    <title>Safeplace - Secure File Storage for iOS</title>
     <style>
-        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;margin:0}
-        .container{background:white;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:600px;padding:50px;text-align:center}
-        .icon{font-size:80px;margin-bottom:20px}
-        h1{color:#333;font-size:3em;margin-bottom:10px;margin-top:0}
-        .tagline{color:#666;font-size:1.2em;margin-bottom:30px}
-        .features{text-align:left;margin:30px 0;padding:20px;background:#f8f9fa;border-radius:10px}
-        .features h2{color:#667eea;margin-bottom:15px;text-align:center;margin-top:0}
-        .features ul{list-style:none;padding:0;margin:0}
-        .features li{padding:8px 0;padding-left:30px;position:relative;color:#555}
-        .features li:before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold;font-size:1.2em}
-        .button{display:inline-block;padding:15px 30px;margin:10px;background:#667eea;color:white;text-decoration:none;border-radius:10px;font-weight:600;transition:all .3s}
-        .button:hover{background:#764ba2;transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,.2)}
-        footer{margin-top:40px;padding-top:20px;border-top:1px solid #e9ecef;color:#999;font-size:0.9em}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .features h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .features ul {
+            list-style: none;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+        }
+        
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .buttons {
+            margin-top: 30px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .button.secondary {
+            background: #6c757d;
+        }
+        
+        .button.secondary:hover {
+            background: #5a6268;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .icon {
+                font-size: 60px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -25,6 +140,7 @@
         <div class="icon">🔒</div>
         <h1>Safeplace</h1>
         <p class="tagline">Secure encrypted file storage for iOS</p>
+        
         <div class="features">
             <h2>Features</h2>
             <ul>
@@ -37,12 +153,17 @@
                 <li>English & Spanish</li>
             </ul>
         </div>
-        <a href="privacy.html" class="button">Privacy Policy</a>
-        <a href="https://github.com/Rodriqe/Safeplace" class="button">GitHub</a>
+        
+        <div class="buttons">
+            <a href="privacy.html" class="button">Privacy Policy</a>
+            <a href="support.html" class="button secondary">Support</a>
+            <a href="https://github.com/Rodriqe/Safeplace" class="button secondary" target="_blank">GitHub</a>
+        </div>
+        
         <footer>
             <p><strong>Your data stays on YOUR device</strong></p>
-            <p style="margin-top:10px;">No servers. No cloud. No tracking.</p>
-            <p style="margin-top:20px;">© 2026 Safeplace. All rights reserved.</p>
+            <p style="margin-top: 10px;">No servers. No cloud. No tracking.</p>
+            <p style="margin-top: 20px;">© 2026 Safeplace. All rights reserved.</p>
         </footer>
     </div>
 </body>
