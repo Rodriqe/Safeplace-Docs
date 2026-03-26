@@ -1,6 +1,6 @@
 # Privacy Policy for Safeplace
 
-**Last Updated: March 12, 2026**
+**Last Updated: March 26, 2026**
 
 ## Introduction
 
