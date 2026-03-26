@@ -3,103 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Safeplace - Secure encrypted file storage for iOS">
     <title>Privacy Policy - Safeplace</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#333;background:#f5f5f7}
-        .container{max-width:800px;margin:0 auto;padding:40px 20px;background:white;box-shadow:0 2px 10px rgba(0,0,0,.1)}
-        header{text-align:center;border-bottom:3px solid #007AFF;padding-bottom:30px;margin-bottom:40px}
-        h1{color:#007AFF;font-size:2.5em;margin-bottom:10px}
-        h2{color:#007AFF;font-size:1.8em;margin-top:40px;margin-bottom:15px;padding-bottom:10px;border-bottom:2px solid #e5e5e7}
-        h3{color:#555;font-size:1.3em;margin-top:25px;margin-bottom:10px}
-        p{margin-bottom:15px}
-        ul{margin-left:30px;margin-bottom:15px}
-        li{margin-bottom:8px}
-        .highlight{background:#f0f8ff;border-left:4px solid #007AFF;padding:20px;margin:25px 0;border-radius:5px}
-        .summary{background:#e8f5e9;border-left:4px solid #4CAF50;padding:20px;margin:30px 0;border-radius:5px}
-        .summary h2{color:#4CAF50;border-bottom:none;margin-top:0}
-        .summary ul{list-style:none;margin-top:15px}
-        .summary li{padding-left:25px;position:relative}
-        .summary li:before{content:"✅";position:absolute;left:0}
-        footer{text-align:center;margin-top:50px;padding-top:30px;border-top:2px solid #e5e5e7;color:#666;font-size:0.9em}
-        a{color:#007AFF;text-decoration:none}
-        a:hover{text-decoration:underline}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #007AFF;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #007AFF;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #007AFF;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e5e7;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #000;
+        }
+        
+        .highlight-box {
+            background: #f0f8ff;
+            border-left: 4px solid #007AFF;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        .summary {
+            background: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .summary h2 {
+            color: #4CAF50;
+            border-bottom: none;
+            margin-top: 0;
+        }
+        
+        .summary ul {
+            margin-top: 15px;
+        }
+        
+        .summary li {
+            list-style: none;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .summary li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e5e7;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>🔒 Privacy Policy</h1>
-            <p style="font-size:1.2em;color:#666;margin-top:10px">Safeplace</p>
-            <p style="color:#666;font-size:0.9em;font-style:italic">Last Updated: March 12, 2026</p>
+            <p style="font-size: 1.2em; color: #666; margin-top: 10px;">Safeplace</p>
+            <p class="last-updated">Last Updated: February 11, 2026</p>
         </header>
+
         <section>
             <h2>Introduction</h2>
-            <p>Safeplace is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
+            <p>Safeplace ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
         </section>
+
         <section>
             <h2>Information We Collect</h2>
+            
             <h3>User-Provided Content</h3>
-            <p>Safeplace allows you to store: photos and videos from your photo library, documents and files from your device, and folder names you create.</p>
-            <div class="highlight"><strong>Important:</strong> All content is stored encrypted on YOUR device only. We do not collect, transmit, or store any data on external servers.</div>
+            <p>Safeplace allows you to store the following types of content:</p>
+            <ul>
+                <li>Photos and videos from your device's photo library</li>
+                <li>Documents and files from your device</li>
+                <li>Folder names and organizational information you create</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <strong>Important:</strong> All content you add to Safeplace is stored encrypted on your device only. We do not collect, transmit, or store any of your files or data on external servers.
+            </div>
+
             <h3>Data We Do NOT Collect</h3>
-            <p>We do not collect: personal identification information (name, email, phone), device identifiers for tracking, location data, usage analytics, advertising identifiers (IDFA), or any data from third-party services.</p>
+            <p>We do not collect:</p>
+            <ul>
+                <li>Personal identification information (name, email, phone number)</li>
+                <li>Device identifiers for tracking purposes</li>
+                <li>Location data</li>
+                <li>Usage analytics or behavioral data</li>
+                <li>Advertising identifiers (IDFA)</li>
+                <li>Any data from third-party services</li>
+            </ul>
         </section>
+
         <section>
             <h2>How We Use Your Information</h2>
             <p>All data in Safeplace is used solely for:</p>
             <ul>
                 <li><strong>App Functionality:</strong> Storing and organizing your files securely on your device</li>
-                <li><strong>Encryption:</strong> Protecting your files with AES-256 encryption</li>
-                <li><strong>Local Storage:</strong> Keeping encrypted files in the app's secure container</li>
+                <li><strong>Encryption:</strong> Protecting your files with AES-256 encryption using passwords you create</li>
+                <li><strong>Local Storage:</strong> Keeping your encrypted files in the app's secure container</li>
             </ul>
-            <p><strong>Your data is NEVER:</strong> sent to external servers, shared with third parties, used for advertising, used for tracking, or accessible to us (the developers).</p>
+
+            <p><strong>Your data is NEVER:</strong></p>
+            <ul>
+                <li>Sent to external servers</li>
+                <li>Shared with third parties</li>
+                <li>Used for advertising or marketing</li>
+                <li>Used for tracking or analytics</li>
+                <li>Accessible to us (the developers)</li>
+            </ul>
         </section>
+
         <section>
             <h2>Data Security</h2>
+            
             <h3>Encryption</h3>
-            <p>All files are encrypted using:</p>
+            <p>All files stored in Safeplace are encrypted using:</p>
             <ul>
-                <li>AES-256-CBC encryption with PKCS#7 padding</li>
-                <li>PBKDF2-HMAC-SHA256 key derivation (100,000 iterations)</li>
-                <li>iOS Keychain storage with kSecAttrAccessibleWhenUnlockedThisDeviceOnly</li>
-                <li>Unique random initialization vectors and salts</li>
+                <li><strong>AES-256-CBC</strong> encryption with PKCS#7 padding</li>
+                <li><strong>PBKDF2-HMAC-SHA256</strong> key derivation (100,000 iterations) for password-protected folders</li>
+                <li><strong>iOS Keychain</strong> storage with <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code> for device-protected folders</li>
+                <li>Unique random initialization vectors (IV) and salts for each encryption operation</li>
             </ul>
+
             <h3>Local Storage Only</h3>
-            <p>Files are stored in the app's secure sandbox (Application Support directory). Files are encrypted at rest and only decrypted temporarily for viewing. No cloud synchronization or external storage.</p>
+            <ul>
+                <li>Files are stored in the app's secure sandbox (Application Support directory)</li>
+                <li>Files are encrypted at rest and only decrypted temporarily for viewing</li>
+                <li>Encrypted files are excluded from device backups (when applicable)</li>
+                <li>No cloud synchronization or external storage</li>
+            </ul>
+
             <h3>Data Retention</h3>
             <ul>
-                <li><strong>Active Files:</strong> Stored indefinitely until you delete them</li>
-                <li><strong>Trash:</strong> Deleted files retained for 30 days before permanent deletion</li>
-                <li><strong>Backups:</strong> You may export encrypted .safeplacebackup files which remain under your control</li>
+                <li><strong>Active Files:</strong> Stored indefinitely until you choose to delete them</li>
+                <li><strong>Trash:</strong> Deleted files are retained in Trash for 30 days before permanent deletion</li>
+                <li><strong>Backups:</strong> You may export encrypted backups (.safeplacebackup files) which remain under your control</li>
             </ul>
         </section>
+
         <section>
             <h2>Your Rights and Control</h2>
-            <p>You have complete control over your data: access, modify, delete files, export encrypted backups, and complete removal by uninstalling the app.</p>
+            <p>You have complete control over your data:</p>
+            <ul>
+                <li><strong>Access:</strong> You can view and access all your files within the app at any time</li>
+                <li><strong>Modification:</strong> You can edit, rename, or organize your files and folders</li>
+                <li><strong>Deletion:</strong> You can delete files and folders at any time</li>
+                <li><strong>Export:</strong> You can export encrypted backups to share or move to another device</li>
+                <li><strong>Complete Removal:</strong> Uninstalling the app permanently deletes all local data</li>
+            </ul>
         </section>
+
         <section>
             <h2>Third-Party Services</h2>
-            <p>Safeplace does not integrate with any third-party services including analytics, advertising networks, cloud storage providers, or social media platforms.</p>
+            <p>Safeplace does not integrate with, transmit data to, or receive data from any third-party services, including:</p>
+            <ul>
+                <li>Analytics services</li>
+                <li>Advertising networks</li>
+                <li>Cloud storage providers</li>
+                <li>Social media platforms</li>
+            </ul>
         </section>
+
         <section>
             <h2>Children's Privacy</h2>
-            <p>Safeplace does not knowingly collect or store any information from children. The app is designed for general use and does not require any personal information.</p>
+            <p>Safeplace does not knowingly collect or store any information from children. The app is designed for general use and does not require any age verification or personal information.</p>
         </section>
+
+        <section>
+            <h2>Sharing Your Data</h2>
+            
+            <h3>Normal Share</h3>
+            <p>When you use the "Share" or "Share Files" function:</p>
+            <ul>
+                <li>Files are temporarily decrypted and shared as standard files (JPG, PDF, MP4, etc.)</li>
+                <li>Recipients receive unencrypted files and can open them with any compatible app</li>
+                <li>You control what files to share and with whom</li>
+            </ul>
+
+            <h3>Secure Share (Encrypted Backup)</h3>
+            <p>When you use "Secure Share (Backup)":</p>
+            <ul>
+                <li>Files are exported as an encrypted .safeplacebackup file</li>
+                <li>Recipients need Safeplace and the password you set to access the files</li>
+                <li>The encrypted backup remains under your control</li>
+            </ul>
+        </section>
+
         <section>
             <h2>Permissions</h2>
+            <p>Safeplace requests the following iOS permissions:</p>
+            
             <h3>Photo Library Access</h3>
-            <p><strong>Purpose:</strong> To import photos and videos into secure encrypted storage. Only accessed when you explicitly choose to add media files.</p>
+            <ul>
+                <li><strong>Purpose:</strong> To import photos and videos into secure encrypted storage</li>
+                <li><strong>Usage:</strong> Only accessed when you explicitly choose to add media files</li>
+                <li><strong>Scope:</strong> You can select specific photos; full library access is not required</li>
+            </ul>
+
             <h3>Photo Library Add Usage</h3>
-            <p><strong>Purpose:</strong> To save exported photos back to your device's photo library. Only when you explicitly export files.</p>
+            <ul>
+                <li><strong>Purpose:</strong> To save exported photos back to your device's photo library</li>
+                <li><strong>Usage:</strong> Only when you explicitly export files from Safeplace</li>
+            </ul>
+
             <h3>Camera Access</h3>
-            <p><strong>Purpose:</strong> To take photos or videos directly for encrypted storage. Only when you use the camera feature within the app.</p>
+            <ul>
+                <li><strong>Purpose:</strong> To take photos or videos directly for encrypted storage</li>
+                <li><strong>Usage:</strong> Only when you explicitly use the camera feature within the app</li>
+            </ul>
+
+            <p><em>All permissions are optional and only used when you initiate the corresponding action.</em></p>
         </section>
+
+        <section>
+            <h2>Data Storage Location</h2>
+            <p>All data is stored locally on your iOS device in:</p>
+            <ul>
+                <li><strong>Path:</strong> Application Support/Safeplace/</li>
+                <li><strong>Protection:</strong> Files are protected by iOS file protection and app encryption</li>
+                <li><strong>Isolation:</strong> Data is sandboxed and inaccessible to other apps</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Changes will be reflected in:</p>
+            <ul>
+                <li>The "Last Updated" date at the top of this policy</li>
+                <li>App updates that include the revised policy</li>
+                <li>Notification within the app (for significant changes)</li>
+            </ul>
+            <p>Your continued use of Safeplace after changes constitutes acceptance of the updated policy.</p>
+        </section>
+
+        <section>
+            <h2>International Users</h2>
+            <p>Safeplace is designed for use worldwide. Since all data is stored locally on your device:</p>
+            <ul>
+                <li>No data crosses international borders through our app</li>
+                <li>No data is stored on servers in any jurisdiction</li>
+                <li>All data protection is handled by your device's iOS security</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Consent</h2>
+            <p>By using Safeplace, you consent to this Privacy Policy.</p>
+        </section>
+
         <section>
             <h2>Contact Us</h2>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Rodriqe/Safeplace" target="_blank">github.com/Rodriqe/Safeplace</a></p>
-            <p><strong>Issues:</strong> <a href="https://github.com/Rodriqe/Safeplace/issues" target="_blank">github.com/Rodriqe/Safeplace/issues</a></p>
+            <p>If you have questions about this Privacy Policy or how Safeplace handles data, you can contact us:</p>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Rodriqe/Safeplace-Docs" target="_blank">https://github.com/Rodriqe/Safeplace-Docs</a></li>
+                <li><strong>Issues:</strong> <a href="https://github.com/Rodriqe/Safeplace-Docs/issues" target="_blank">https://github.com/Rodriqe/Safeplace-Docs/issues</a></li>
+            </ul>
         </section>
+
+        <section>
+            <h2>Legal Compliance</h2>
+            <p>Safeplace complies with:</p>
+            <ul>
+                <li>Apple's App Store Review Guidelines</li>
+                <li>iOS data protection requirements</li>
+                <li>GDPR principles (though no personal data is collected)</li>
+                <li>CCPA principles (though no personal data is sold or shared)</li>
+            </ul>
+        </section>
+
         <div class="summary">
             <h2>Summary (TL;DR)</h2>
             <ul>
@@ -108,13 +376,17 @@
                 <li>No servers, no cloud, no third parties</li>
                 <li>You have complete control over your data</li>
                 <li>Strong encryption (AES-256) protects your files</li>
-                <li>We cannot access your data</li>
+                <li>We cannot access your data (even if we wanted to)</li>
             </ul>
         </div>
+
         <footer>
             <p><strong>Safeplace - Your privacy is our priority.</strong></p>
-            <p style="margin-top:10px">© 2026 Safeplace. All rights reserved.</p>
-            <p style="margin-top:10px"><a href="https://github.com/Rodriqe/Safeplace">GitHub</a> | <a href="https://github.com/Rodriqe/Safeplace/issues">Support</a></p>
+            <p style="margin-top: 10px;">© 2026 Safeplace. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/Rodriqe/Safeplace-Docs">GitHub</a> | 
+                <a href="https://github.com/Rodriqe/Safeplace-Docs/issues">Support</a>
+            </p>
         </footer>
     </div>
 </body>
