@@ -1,36 +1,64 @@
-# Safeplace Documentation
+# Safeplace Documentation Website
 
-Public documentation for Safeplace - Secure encrypted file storage for iOS.
+Este directorio contiene el sitio web público de Safeplace, publicado en GitHub Pages desde el repositorio `Safeplace-Docs`.
 
-## 🌐 Live Site
+## 🌐 URL Pública
 
-**Privacy Policy**: https://rodriqe.github.io/Safeplace-Docs/privacy.html
+**Sitio en vivo**: https://rodriqe.github.io/Safeplace-Docs/
 
-## 📄 Contents
+## 📄 Archivos
 
-- `/docs/privacy.html` - Privacy Policy (required for App Store)
-- `/docs/index.html` - Landing page
-- `PRIVACY_POLICY.md` - Privacy Policy (Markdown format)
+| Archivo | Descripción | URL |
+|---------|-------------|-----|
+| `index.html` | Landing page principal | https://rodriqe.github.io/Safeplace-Docs/ |
+| `privacy.html` | Privacy Policy (App Store) | https://rodriqe.github.io/Safeplace-Docs/privacy.html |
+| `support.html` | Soporte público para App Store Connect | https://rodriqe.github.io/Safeplace-Docs/support.html |
 
-## 🔗 Links
+## 🎯 Propósito
 
-- **Main App Repository**: [github.com/Rodriqe/Safeplace](https://github.com/Rodriqe/Safeplace) (Private)
-- **Support**: [Create an issue](https://github.com/Rodriqe/Safeplace-Docs/issues)
+- **privacy.html**: URL oficial de Privacy Policy para App Store Connect
+- **support.html**: URL oficial de soporte para App Store Connect
+- **index.html**: Landing page pública del proyecto
+
+## 🚀 Publicación
+
+Este sitio se publica automáticamente vía **GitHub Pages** cuando se hace push al repositorio público `Safeplace-Docs` en la rama `main`.
+
+### Configuración
+
+1. Repositorio → Settings → Pages
+2. Source: `Deploy from a branch`
+3. Branch: `main` → `/docs`
+
+### Actualizar Contenido
+
+```bash
+# Editar archivos en docs/
+# Luego subirlos al repo público Safeplace-Docs:
+git add docs/
+git commit -m "Update documentation website"
+git push origin main
+
+# GitHub Pages actualizará automáticamente en 1-2 minutos
+```
+
+## 📋 Checklist GitHub Pages
+
+- [x] Directorio `/docs` creado
+- [x] `index.html` creado
+- [x] `privacy.html` creado
+- [ ] GitHub Pages habilitado (Settings → Pages)
+- [ ] Sitio verificado: https://rodriqe.github.io/Safeplace-Docs/
+- [ ] Privacy Policy URL añadida a App Store Connect
+- [ ] Support URL añadida a App Store Connect
+
+## 🔗 Enlaces Importantes
+
+- **Privacy Policy**: https://rodriqe.github.io/Safeplace-Docs/privacy.html
+- **Support**: https://rodriqe.github.io/Safeplace-Docs/support.html
+- **GitHub Repo**: https://github.com/Rodriqe/Safeplace-Docs
+- **App Store Connect**: https://appstoreconnect.apple.com
 
 ---
 
-## About Safeplace
-
-Safeplace is a secure iOS app that protects your files with AES-256 encryption. All data stays encrypted on your device—no cloud, no tracking.
-
-- 🔐 Password-protected folders
-- 📱 iPhone & iPad support
-- 🌍 English & Spanish
-- 🎨 Dark mode support
-- ⚡ Fast and private
-
----
-
-*This is the public documentation repository. The main app code is kept private for security.*
-
-**© 2026 Safeplace. All rights reserved.**
+**Nota**: Este sitio es estático (solo HTML/CSS). No requiere servidor ni base de datos.
