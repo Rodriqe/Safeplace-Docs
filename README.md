@@ -12,11 +12,13 @@ Este directorio contiene el sitio web público de Safeplace, publicado en GitHub
 |---------|-------------|-----|
 | `index.html` | Landing page principal | https://rodriqe.github.io/Safeplace-Docs/ |
 | `privacy.html` | Privacy Policy (App Store) | https://rodriqe.github.io/Safeplace-Docs/privacy.html |
+| `terms.html` | Terms of Use / EULA (App Store) | https://rodriqe.github.io/Safeplace-Docs/terms.html |
 | `support.html` | Soporte público para App Store Connect | https://rodriqe.github.io/Safeplace-Docs/support.html |
 
 ## 🎯 Propósito
 
 - **privacy.html**: URL oficial de Privacy Policy para App Store Connect
+- **terms.html**: URL oficial de Terms of Use (EULA) para App Store Connect y para el link en el paywall
 - **support.html**: URL oficial de soporte para App Store Connect
 - **index.html**: Landing page pública del proyecto
 
@@ -47,14 +49,17 @@ git push origin main
 - [x] Directorio `/docs` creado
 - [x] `index.html` creado
 - [x] `privacy.html` creado
+- [x] `terms.html` creado
 - [ ] GitHub Pages habilitado (Settings → Pages)
 - [ ] Sitio verificado: https://rodriqe.github.io/Safeplace-Docs/
 - [ ] Privacy Policy URL añadida a App Store Connect
+- [ ] Terms of Use (EULA) URL añadida a App Store Connect
 - [ ] Support URL añadida a App Store Connect
 
 ## 🔗 Enlaces Importantes
 
 - **Privacy Policy**: https://rodriqe.github.io/Safeplace-Docs/privacy.html
+- **Terms of Use**: https://rodriqe.github.io/Safeplace-Docs/terms.html
 - **Support**: https://rodriqe.github.io/Safeplace-Docs/support.html
 - **GitHub Repo**: https://github.com/Rodriqe/Safeplace-Docs
 - **App Store Connect**: https://appstoreconnect.apple.com
