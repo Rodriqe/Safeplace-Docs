@@ -1,6 +1,6 @@
 # Privacy Policy for Safeplace
 
-**Last Updated: March 26, 2026**
+**Last Updated: February 11, 2026**
 
 ## Introduction
 
@@ -152,8 +152,9 @@ By using Safeplace, you consent to this Privacy Policy.
 
 If you have questions about this Privacy Policy or how Safeplace handles data, you can contact us:
 
-- **GitHub**: https://github.com/Rodriqe/Safeplace-Docs
-- **Issues**: https://github.com/Rodriqe/Safeplace-Docs/issues
+- **GitHub**: https://github.com/Rodriqe/Safeplace
+- **Issues**: https://github.com/Rodriqe/Safeplace/issues
+- **Email**: [Your contact email here]
 
 ## Legal Compliance
 
